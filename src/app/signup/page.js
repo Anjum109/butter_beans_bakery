@@ -23,10 +23,10 @@ export default function Signup() {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-[#fdf4f2] via-[#fff5f5] to-[#fed7aa] p-4 sm:p-6 lg:p-8">
 
-            {/* মেইন কার্ড কন্টেইনার */}
+
             <div className="w-full max-w-md bg-white/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/40 p-8 sm:p-10 transition-all duration-300 hover:shadow-2xl">
 
-                {/* ব্র্যান্ড লোগো ও হেডার */}
+
                 <div className="text-center mb-8">
                     <Link href="/" className="text-3xl font-extrabold text-gray-800 tracking-tight">
                         Butter<span className="text-[#a84c38]">Beans</span>Bakery
@@ -35,10 +35,10 @@ export default function Signup() {
                     <p className="text-sm text-gray-500 mt-1">Join our community today!</p>
                 </div>
 
-                {/* রেজিস্ট্রেশন ফর্ম */}
+
                 <form onSubmit={handleSubmit} className="space-y-4">
 
-                    {/* নাম ইনপুট */}
+
                     <div className="space-y-1.5">
                         <label className="text-sm font-medium text-gray-600 block">Full Name</label>
                         <div className="relative rounded-lg shadow-sm">
@@ -55,7 +55,7 @@ export default function Signup() {
                         </div>
                     </div>
 
-                    {/* ইমেইল ইনপুট */}
+
                     <div className="space-y-1.5">
                         <label className="text-sm font-medium text-gray-600 block">Email Address</label>
                         <div className="relative rounded-lg shadow-sm">
@@ -72,7 +72,7 @@ export default function Signup() {
                         </div>
                     </div>
 
-                    {/* পাসওয়ার্ড ইনপুট */}
+
                     <div className="space-y-1.5">
                         <label className="text-sm font-medium text-gray-600 block">Password</label>
                         <div className="relative rounded-lg shadow-sm">
@@ -96,7 +96,7 @@ export default function Signup() {
                         </div>
                     </div>
 
-                    {/* কনফার্ম পাসওয়ার্ড ফিল্ড */}
+
                     <div className="space-y-1.5">
                         <label className="text-sm font-medium text-gray-600 block">Confirm Password</label>
                         <div className="relative rounded-lg shadow-sm">
@@ -113,7 +113,7 @@ export default function Signup() {
                         </div>
                     </div>
 
-                    {/* শর্তাবলী চেকবক্স */}
+
                     <div className="flex items-start">
                         <input
                             id="terms"
@@ -126,7 +126,7 @@ export default function Signup() {
                         </label>
                     </div>
 
-                    {/* সাইন আপ বাটন */}
+
                     <button
                         type="submit"
                         className="w-full py-3 px-4 bg-gradient-to-r from-[#a84c38] to-[#c25942] text-white font-semibold rounded-xl shadow-md hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#a84c38] transition-all text-sm tracking-wide mt-2"
@@ -135,7 +135,7 @@ export default function Signup() {
                     </button>
                 </form>
 
-                {/* Divider */}
+
                 <div className="relative my-6">
                     <div className="absolute inset-0 flex items-center">
                         <div className="w-full border-t border-gray-200"></div>
@@ -145,7 +145,7 @@ export default function Signup() {
                     </div>
                 </div>
 
-                {/* সোশ্যাল বাটন */}
+
                 <div className="grid grid-cols-2 gap-3">
                     <button className="flex items-center justify-center space-x-2 py-2.5 px-4 border border-gray-200 bg-white/50 rounded-xl hover:bg-gray-50 transition-all text-sm font-medium text-gray-600">
                         <FcGoogle className="w-5 h-5" />
@@ -158,7 +158,7 @@ export default function Signup() {
                     </button>
                 </div>
 
-                {/* লগইন লিংক */}
+
                 <div className="text-center mt-8">
                     <p className="text-sm text-gray-500">
                         Already have an account?{" "}

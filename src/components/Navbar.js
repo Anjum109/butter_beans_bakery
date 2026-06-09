@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FiChevronDown, FiSearch, FiShoppingCart, FiHeart, FiMenu, FiX } from "react-icons/fi";
-import { AiOutlineUser } from "react-icons/ai"; // ইমেজ অনুযায়ী ইউজার আইকনের জন্য
+import { AiOutlineUser } from "react-icons/ai";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    {/* ২. মেইন মেনু এবং লগইন বাটন (ঠিক মাঝখানে এবং ইমেজের মতো অর্ডারে) */}
+
                     <div className="hidden md:flex items-center space-x-7 text-[15px] text-[#8e8e8e]">
                         <Link href="/" className="text-[#8e8e8e] hover:text-black transition">
                             Home
@@ -42,14 +42,13 @@ export default function Navbar() {
                         <Link href="/contact" className="hover:text-black transition">Contact</Link>
                         <Link href="/pages" className="hover:text-black transition">Pages</Link>
 
-                        {/* ইমেজ অনুযায়ী মেনুর ঠিক পরেই Login / Register লিংক (গাঢ় লাল/খয়েরী রঙে) */}
+
                         <Link href="/login" className="flex items-center space-x-1.5 text-[#a84c38] font-medium pl-6 hover:opacity-80 transition">
                             <AiOutlineUser className="w-[18px] h-[18px]" />
                             <span>Login / Register</span>
                         </Link>
                     </div>
 
-                    {/* ৩. একদম ডানদিকের অ্যাকশন আইকনসমূহ */}
                     <div className="hidden md:flex items-center space-x-5 text-[#8e8e8e]">
                         <button className="hover:text-black transition">
                             <FiSearch className="w-[18px] h-[18px] stroke-[2.5]" />
@@ -66,7 +65,7 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    {/* ৪. মোবাইল রেসপনসিভ বাটন */}
+
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
@@ -79,7 +78,7 @@ export default function Navbar() {
                 </div>
             </div>
 
-            {/* ৫. মোবাইল ড্রপডাউন মেনু */}
+
             {isOpen && (
                 <div className="md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-6 space-y-3 shadow-md">
                     <Link href="/" className="block text-gray-800 py-2">Home</Link>
